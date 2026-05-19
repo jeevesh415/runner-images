@@ -1,41 +1,42 @@
 | Announcements |
 |-|
-| [Windows Server 2025 with Visual Studio 2026 is now available as a public beta](https://github.com/actions/runner-images/issues/13638) |
+| [[Windows] `windows-latest` image-label will use Windows Server 2025 with Visual Studio 2026 image in June 2026](https://github.com/actions/runner-images/issues/14017) |
+| [[Windows] The Windows Server 2025 with Visual Studio 2026 is now generally available in GitHub Actions](https://github.com/actions/runner-images/issues/14016) |
 | [[Windows/Ubuntu] Docker Server and Client will be updated to version 29.1.*, Docker Compose will be updated to version 2.40.3 on February 9th, 2026](https://github.com/actions/runner-images/issues/13474) |
 ***
 # Windows Server 2025
-- OS Version: 10.0.26100 Build 32522
-- Image Version: 20260405.77.1
+- OS Version: 10.0.26100 Build 32690
+- Image Version: 20260510.128.1
 
 ## Windows features
 - Windows Subsystem for Linux (WSLv1): Enabled
-- Windows Subsystem for Linux (Default, WSLv2): 2.6.3.0
+- Windows Subsystem for Linux (Default, WSLv2): 2.7.3.0
 
 ## Installed Software
 
 ### Language and Runtime
-- Bash 5.2.37(1)-release
+- Bash 5.3.9(1)-release
 - Go 1.24.13
 - Julia 1.12.0
-- Kotlin 2.3.20
+- Kotlin 2.3.21
 - LLVM 20.1.8
 - Node 22.22.2
 - Perl 5.42.0
-- PHP 8.5.4
+- PHP 8.5.6
 - Python 3.12.10
 - Ruby 3.3.11
 
 ### Package Management
 - Chocolatey 2.7.1
-- Composer 2.9.5
-- Helm 4.1.3
-- Miniconda 26.1.1 (pre-installed on the image but not added to PATH)
+- Composer 2.9.7
+- Helm 4.1.4
+- Miniconda 26.3.2 (pre-installed on the image but not added to PATH)
 - NPM 10.9.7
-- NuGet 7.3.0.70
-- pip 26.0.1 (python 3.12)
-- Pipx 1.11.1
+- NuGet 7.3.1.1
+- pip 26.1.1 (python 3.12)
+- Pipx 1.12.0
 - RubyGems 3.5.22
-- Vcpkg (build from commit 77df67cfff)
+- Vcpkg (build from commit 99a97de2cb)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -45,40 +46,40 @@
 | CONDA                   | C:\Miniconda |
 
 ### Project Management
-- Ant 1.10.16
-- Gradle 9.4
-- Maven 3.9.14
-- sbt 1.12.8
+- Ant 1.10.17
+- Gradle 9.5
+- Maven 3.9.15
+- sbt 1.12.11
 
 ### Tools
 - 7zip 26.00
 - aria2 1.37.0
-- azcopy 10.32.2
-- Bazel 9.0.1
+- azcopy 10.32.3
+- Bazel 9.1.0
 - Bazelisk 1.28.1
-- Bicep 0.42.1
+- Bicep 0.43.8
 - Cabal 3.16.1.0
 - CMake 3.31.6
-- CodeQL Action Bundle 2.25.1
+- CodeQL Action Bundle 2.25.4
 - Docker 29.1.5
 - Docker Compose v2 2.40.3
-- Docker-wincred 0.9.5
+- Docker-wincred 0.9.7
 - ghc 9.14.1
-- Git 2.53.0.windows.2
+- Git 2.54.0.windows.1
 - Git LFS 3.7.1
-- ImageMagick 7.1.2-18
+- ImageMagick 7.1.2-21
 - InnoSetup 6.7.1
 - jq 1.8.1
 - Kind 0.31.0
-- Kubectl 1.35.3
+- Kubectl 1.36.0
 - gcc 15.2.0
 - gdb 17.1
 - GNU Binutils 2.46
 - Newman 6.2.2
-- OpenSSL 3.6.1
-- Packer 1.15.0
-- Pulumi 3.229.0
-- R 4.5.3
+- OpenSSL 3.6.2
+- Packer 1.15.3
+- Pulumi 3.237.0
+- R 4.6.0
 - Service Fabric SDK 10.1.2493.9590
 - Stack 3.9.3
 - Swig 4.3.1
@@ -90,32 +91,32 @@
 - Ninja 1.13.2
 
 ### CLI Tools
-- AWS CLI 2.34.24
-- AWS SAM CLI 1.157.1
-- AWS Session Manager CLI 1.2.804.0
-- Azure CLI 2.84.0
-- Azure DevOps CLI extension 1.0.2
-- GitHub CLI 2.89.0
+- AWS CLI 2.34.45
+- AWS SAM CLI 1.159.1
+- AWS Session Manager CLI 1.2.814.0
+- Azure CLI 2.86.0
+- Azure DevOps CLI extension 1.0.3
+- GitHub CLI 2.92.0
 
 ### Rust Tools
-- Cargo 1.94.1
-- Rust 1.94.1
-- Rustdoc 1.94.1
+- Cargo 1.95.0
+- Rust 1.95.0
+- Rustdoc 1.95.0
 - Rustup 1.29.0
 
 #### Packages
-- Clippy 0.1.94
-- Rustfmt 1.8.0
+- Clippy 0.1.95
+- Rustfmt 1.9.0
 
 ### Browsers and Drivers
-- Google Chrome 146.0.7680.178
-- Chrome Driver 146.0.7680.165
-- Microsoft Edge 146.0.3856.97
-- Microsoft Edge Driver 146.0.3856.97
-- Mozilla Firefox 149.0
+- Google Chrome 148.0.7778.97
+- Chrome Driver 148.0.7778.97
+- Microsoft Edge 148.0.3967.54
+- Microsoft Edge Driver 148.0.3967.54
+- Mozilla Firefox 150.0.2
 - Gecko Driver 0.36.0
 - IE Driver 4.14.0.0
-- Selenium server 4.41.0
+- Selenium server 4.43.0
 
 #### Environment variables
 | Name              | Value                              |
@@ -126,13 +127,13 @@
 | SELENIUM_JAR_PATH | C:\selenium\selenium-server.jar    |
 
 ### Java
-| Version             | Environment Variable |
-| ------------------- | -------------------- |
-| 8.0.482+8           | JAVA_HOME_8_X64      |
-| 11.0.30+7           | JAVA_HOME_11_X64     |
-| 17.0.18+8 (default) | JAVA_HOME_17_X64     |
-| 21.0.10+7.0         | JAVA_HOME_21_X64     |
-| 25.0.2+10.0         | JAVA_HOME_25_X64     |
+| Version              | Environment Variable |
+| -------------------- | -------------------- |
+| 8.0.482+8            | JAVA_HOME_8_X64      |
+| 11.0.31+11           | JAVA_HOME_11_X64     |
+| 17.0.19+10 (default) | JAVA_HOME_17_X64     |
+| 21.0.11+10.0         | JAVA_HOME_21_X64     |
+| 25.0.3+9.0           | JAVA_HOME_25_X64     |
 
 ### Shells
 | Name          | Target                            |
@@ -157,19 +158,19 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 1.22.12
 - 1.23.12
 - 1.24.13
-- 1.25.8
+- 1.25.10
 
 #### Node.js
 - 20.20.2
 - 22.22.2
-- 24.14.1
+- 24.15.0
 
 #### Python
 - 3.10.11
 - 3.11.9
 - 3.12.10
-- 3.13.12
-- 3.14.3
+- 3.13.13
+- 3.14.4
 
 #### PyPy
 - 3.9.19 [PyPy 7.3.16]
@@ -179,7 +180,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 3.2.11
 - 3.3.11
 - 3.4.9
-- 4.0.2
+- 4.0.3
 
 ### Databases
 
@@ -203,22 +204,22 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Database tools
 - Azure CosmosDb Emulator 2.14.27.0
 - DacFx 170.3.93.6
-- MySQL 8.0.45.0
+- MySQL 8.0.46.0
 - SQL OLEDB Driver 18 18.7.5.0
 - SQL OLEDB Driver 19 19.4.1.0
 - SQLPS 1.0
-- MongoDB Shell (mongosh) 2.8.2
+- MongoDB Shell (mongosh) 2.8.3
 
 ### Web Servers
 | Name   | Version | ConfigFile                            | ServiceName | ServiceStatus | ListenPort |
 | ------ | ------- | ------------------------------------- | ----------- | ------------- | ---------- |
 | Apache | 2.4.55  | C:\tools\Apache24\conf\httpd.conf     | Apache      | Stopped       | 80         |
-| Nginx  | 1.29.7  | C:\tools\nginx-1.29.7\conf\nginx.conf | nginx       | Stopped       | 80         |
+| Nginx  | 1.29.8  | C:\tools\nginx-1.29.8\conf\nginx.conf | nginx       | Stopped       | 80         |
 
 ### Visual Studio Enterprise 2022
-| Name                          | Version        | Path                                                     |
-| ----------------------------- | -------------- | -------------------------------------------------------- |
-| Visual Studio Enterprise 2022 | 17.14.37111.16 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
+| Name                          | Version       | Path                                                     |
+| ----------------------------- | ------------- | -------------------------------------------------------- |
+| Visual Studio Enterprise 2022 | 17.14.37216.2 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
 
 #### Workloads, components and extensions
 | Package                                                                   | Version         |
@@ -241,11 +242,12 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Component.UnityEngine.x64                                                 | 17.14.36510.44  |
 | Component.Unreal.Debugger                                                 | 17.14.36907.17  |
 | Component.Unreal.Ide                                                      | 17.14.36510.44  |
-| Component.VisualStudio.GitHub.Copilot                                     | 17.14.37111.13  |
+| Component.VisualStudio.GitHub.Copilot                                     | 17.14.37215.5   |
+| Component.VisualStudio.GitHubCopilotForAzure.x64                          | 17.14.37202.16  |
 | Component.VSInstallerProjects2022                                         | 3.0.0           |
 | Component.WixToolset.VisualStudioExtension.Dev17                          | 1.0.0.22        |
 | Component.WixToolset.VisualStudioExtension.Schemas3                       | 1.0.0.22        |
-| ComponentGroup.Microsoft.NET.AppModernization                             | 17.14.37111.13  |
+| ComponentGroup.Microsoft.NET.AppModernization                             | 17.14.37203.1   |
 | ios                                                                       | 26.0.9752.0     |
 | maccatalyst                                                               | 26.0.9752.0     |
 | maui.blazor                                                               | 9.0.111.6930    |
@@ -274,19 +276,19 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Microsoft.Net.ComponentGroup.4.8.DeveloperTools                           | 17.14.36510.44  |
 | Microsoft.Net.ComponentGroup.DevelopmentPrerequisites                     | 17.14.36510.44  |
 | Microsoft.Net.ComponentGroup.TargetingPacks.Common                        | 17.14.36510.44  |
-| microsoft.net.runtime.android                                             | 9.0.1426.11910  |
-| microsoft.net.runtime.android.aot                                         | 9.0.1426.11910  |
-| microsoft.net.runtime.android.aot.net8                                    | 9.0.1426.11910  |
-| microsoft.net.runtime.android.net8                                        | 9.0.1426.11910  |
-| microsoft.net.runtime.ios                                                 | 9.0.1426.11910  |
-| microsoft.net.runtime.maccatalyst                                         | 9.0.1426.11910  |
-| microsoft.net.runtime.mono.tooling                                        | 9.0.1426.11910  |
-| microsoft.net.runtime.mono.tooling.net8                                   | 9.0.1426.11910  |
-| microsoft.net.sdk.emscripten                                              | 9.0.14.11003    |
+| microsoft.net.runtime.android                                             | 9.0.1526.17522  |
+| microsoft.net.runtime.android.aot                                         | 9.0.1526.17522  |
+| microsoft.net.runtime.android.aot.net8                                    | 9.0.1526.17522  |
+| microsoft.net.runtime.android.net8                                        | 9.0.1526.17522  |
+| microsoft.net.runtime.ios                                                 | 9.0.1526.17522  |
+| microsoft.net.runtime.maccatalyst                                         | 9.0.1526.17522  |
+| microsoft.net.runtime.mono.tooling                                        | 9.0.1526.17522  |
+| microsoft.net.runtime.mono.tooling.net8                                   | 9.0.1526.17522  |
+| microsoft.net.sdk.emscripten                                              | 9.0.14.17501    |
 | Microsoft.NetCore.Component.DevelopmentTools                              | 17.14.36510.44  |
-| Microsoft.NetCore.Component.Runtime.8.0                                   | 17.14.37027.9   |
-| Microsoft.NetCore.Component.Runtime.9.0                                   | 17.14.37027.9   |
-| Microsoft.NetCore.Component.SDK                                           | 17.14.37027.9   |
+| Microsoft.NetCore.Component.Runtime.8.0                                   | 17.14.37202.16  |
+| Microsoft.NetCore.Component.Runtime.9.0                                   | 17.14.37202.16  |
+| Microsoft.NetCore.Component.SDK                                           | 17.14.37202.16  |
 | Microsoft.NetCore.Component.Web                                           | 17.14.36510.44  |
 | Microsoft.VisualStudio.Component.AppInsights.Tools                        | 17.14.36510.44  |
 | Microsoft.VisualStudio.Component.AspNet                                   | 17.14.36510.44  |
@@ -417,7 +419,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine   | 17.14.36510.44  |
 | Microsoft.VisualStudio.ComponentGroup.WindowsAppDevelopment.Prerequisites | 17.14.36510.44  |
 | Microsoft.VisualStudio.ComponentGroup.WindowsAppSDK.Cs                    | 17.14.36510.44  |
-| Microsoft.VisualStudio.Workload.Azure                                     | 17.14.36904.0   |
+| Microsoft.VisualStudio.Workload.Azure                                     | 17.14.37202.16  |
 | Microsoft.VisualStudio.Workload.CoreEditor                                | 17.14.36015.10  |
 | Microsoft.VisualStudio.Workload.Data                                      | 17.14.36015.10  |
 | Microsoft.VisualStudio.Workload.DataScience                               | 17.14.36015.10  |
@@ -428,15 +430,15 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Microsoft.VisualStudio.Workload.NativeGame                                | 17.14.36331.10  |
 | Microsoft.VisualStudio.Workload.NativeMobile                              | 17.14.36802.14  |
 | Microsoft.VisualStudio.Workload.NetCrossPlat                              | 17.14.36518.2   |
-| Microsoft.VisualStudio.Workload.NetWeb                                    | 17.14.36518.2   |
+| Microsoft.VisualStudio.Workload.NetWeb                                    | 17.14.37202.16  |
 | Microsoft.VisualStudio.Workload.Node                                      | 17.14.36517.7   |
 | Microsoft.VisualStudio.Workload.Office                                    | 17.14.36015.10  |
 | Microsoft.VisualStudio.Workload.Python                                    | 17.14.36015.10  |
 | Microsoft.VisualStudio.Workload.Universal                                 | 17.14.36331.10  |
 | Microsoft.VisualStudio.Workload.VisualStudioExtension                     | 17.14.36015.10  |
-| runtimes.ios                                                              | 9.0.1426.11910  |
-| runtimes.maccatalyst                                                      | 9.0.1426.11910  |
-| wasm.tools                                                                | 9.0.1426.11910  |
+| runtimes.ios                                                              | 9.0.1526.17522  |
+| runtimes.maccatalyst                                                      | 9.0.1526.17522  |
+| wasm.tools                                                                | 9.0.1526.17522  |
 | ProBITools.MicrosoftAnalysisServicesModelingProjects2022                  | 4.0.0           |
 | ProBITools.MicrosoftReportProjectsforVisualStudio2022                     | 4.0.0           |
 | SSIS.MicrosoftDataToolsIntegrationServices                                | 2.2             |
@@ -461,19 +463,19 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 10.0.26100.0
 
 ### .NET Core Tools
-- .NET Core SDK: 8.0.125, 8.0.206, 8.0.319, 8.0.419, 9.0.115, 9.0.205, 9.0.312, 10.0.105, 10.0.201
+- .NET Core SDK: 8.0.126, 8.0.206, 8.0.319, 8.0.420, 9.0.116, 9.0.205, 9.0.313, 10.0.107, 10.0.203
 - .NET Framework: 4.8, 4.8.1
-- Microsoft.AspNetCore.App: 8.0.6, 8.0.22, 8.0.25, 9.0.6, 9.0.14, 10.0.5
-- Microsoft.NETCore.App: 8.0.6, 8.0.22, 8.0.25, 9.0.6, 9.0.14, 10.0.5
-- Microsoft.WindowsDesktop.App: 8.0.6, 8.0.22, 8.0.25, 9.0.6, 9.0.14, 10.0.5
+- Microsoft.AspNetCore.App: 8.0.6, 8.0.22, 8.0.26, 9.0.6, 9.0.15, 10.0.7
+- Microsoft.NETCore.App: 8.0.6, 8.0.22, 8.0.26, 9.0.6, 9.0.15, 10.0.7
+- Microsoft.WindowsDesktop.App: 8.0.6, 8.0.22, 8.0.26, 9.0.6, 9.0.15, 10.0.7
 - nbgv 3.9.50+6feeb89450
 
 ### PowerShell Tools
-- PowerShell 7.4.14
+- PowerShell 7.4.15
 
 #### Powershell Modules
 - Az: 14.6.0
-- AWSPowershell: 5.0.189
+- AWSPowershell: 5.0.210
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.10
 - Microsoft.Graph: 2.36.1
@@ -488,7 +490,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Package Name               | Version                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Android Command Line Tools | 16.0                                                                                                                                                                                                                                                                                                                                          |
-| Android Emulator           | 36.5.10                                                                                                                                                                                                                                                                                                                                       |
+| Android Emulator           | 36.5.11                                                                                                                                                                                                                                                                                                                                       |
 | Android SDK Build-tools    | 37.0.0<br>36.0.0 36.1.0<br>35.0.0 35.0.1<br>34.0.0                                                                                                                                                                                                                                                                                            |
 | Android SDK Platforms      | android-37.0 (rev 1)<br>android-36.1 (rev 1)<br>android-36-ext19 (rev 1)<br>android-36-ext18 (rev 1)<br>android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3) |
 | Android SDK Platform-Tools | 37.0.0                                                                                                                                                                                                                                                                                                                                        |
